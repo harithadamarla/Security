@@ -1,0 +1,9 @@
+Script started on Thu 05 Apr 2018 12:26:11 AM CDT
+root@js-17-81:/class/assignment# vi part2.s[3P./a.outgcc part3a.c[1Pvi[C[C[C[C[C[C[C[C[Cobjdump -d part2[9P./part2ld part2.o -o part2as part2.s -o part2.o[C[1P[1@1[C[C[C[C[C[C[C[C[C[C[C[C[1P.o1.o[C[C
+root@js-17-81:/class/assignment# ld part1.o -o part1
+root@js-17-81:/class/assignment# ./part1
+# exit
+root@js-17-81:/class/assignment# exit
+exit
+
+Script done on Thu 05 Apr 2018 12:26:48 AM CDT

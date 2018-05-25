@@ -1,0 +1,9 @@
+Script started on Thu 05 Apr 2018 12:48:57 AM CDT
+root@js-17-81:/class/assignment# as part2.s -o part2.o
+root@js-17-81:/class/assignment# ld part2.o -o part2
+root@js-17-81:/class/assignment# ./part2
+# exit
+root@js-17-81:/class/assignment# exit
+exit
+
+Script done on Thu 05 Apr 2018 12:49:23 AM CDT
