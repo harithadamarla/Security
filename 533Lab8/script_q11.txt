@@ -1,0 +1,9 @@
+Script started on Tue Apr 10 23:58:44 2018
+[?1034hbash-3.2$ exitgrep -e ".*ing" Random.txt | head -2[C[C[C[C[C[C[C[C[C[Cexit[Kgrep -o -E '\w+' Random.txt | sort -u -f[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgrep -o '\b\([0-9A-Fa-f]\{2\}:\)\{5\}[0-9A-Fa-f]\{2\}\b' Random.txt
+00:04:ff:ff:ff:c9
+a0:b3:ff:ff:ff:7e
+60:be:ff:ff:ff:e0
+bash-3.2$ exit
+exit
+
+Script done on Tue Apr 10 23:59:09 2018

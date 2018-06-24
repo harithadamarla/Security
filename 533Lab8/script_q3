@@ -1,0 +1,9 @@
+Script started on Tue Apr 10 19:22:05 2018
+[?1034hbash-3.2$ wc Random.txt
+     728   14004   96452 Random.txt
+bash-3.2$ wc -w Random.txt
+   14004 Random.txt
+bash-3.2$ exit
+exit
+
+Script done on Tue Apr 10 19:23:09 2018

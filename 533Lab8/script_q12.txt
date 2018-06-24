@@ -1,0 +1,10 @@
+Script started on Wed Apr 11 00:21:29 2018
+[?1034hbash-3.2$ grep -o ''\'b'[']'a]'-]'z]'A]'-]'Z]'0]'-]'9]'\]'.]'_]'-]'[C\'+'@'[']'0]'-]'9]'A]'-]'Z]'a]'-]'z]'-]'[C\'+'\'.'[']'a]'-]'z]'A]'-]'Z]'0]'-]'9]'\]'.]'[C\'{'3'\'}'\'b'[C Random.txt
+anni@gmail.com
+bruce@security.edu
+anitvirus@malware.org
+defense@iu.edu
+bash-3.2$ exit
+exit
+
+Script done on Wed Apr 11 00:22:40 2018

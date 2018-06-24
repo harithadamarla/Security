@@ -1,0 +1,8 @@
+Script started on Tue Apr 10 21:33:52 2018
+[?1034hbash-3.2$ exitgrep -o -E '\w+' Random.txt | sort -u -f[C[C[C[C[C[C[C[C[C[Cexit[Kgrep -o -E '\w+' Random.txt | sort -u -f[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ke ""."i"n"g"*ing"[C[C[C[C Random.txt >[K| head -2
+Eavesdropping
+Secure coding
+bash-3.2$ exit
+exit
+
+Script done on Tue Apr 10 21:34:37 2018

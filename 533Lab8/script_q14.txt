@@ -1,0 +1,8 @@
+Script started on Fri Apr 13 23:03:29 2018
+[?1034hbash-3.2$ exit cleargrep -oE '\w+' Random.txt|sort|uniq -c [C[C[C[C[C[C[C[C[C[Cexit[Kgrep -oE '\w+' Random.txt|uniq -c| sort -n [C[C[C[C[C[C[C[C[C[Csudo su[Kgrep -oE '\w+' Random.txt|uniq -c| sort -n [C[C[C[C[C[C[C[C[C[Csudo su[K[K[K[K[K[K[K[Kgrep -o '\b\([0-9A-Fa-f]\{4\}:\)\{7\}[0-9A-Fa-f]\{4\}\b' Random.txt
+2001:cdba:0000:0000:0000:0000:3257:9652
+2001:0db8:0a0b:12f0:0000:0000:0000:0001
+bash-3.2$ exit
+exit
+
+Script done on Fri Apr 13 23:03:49 2018
